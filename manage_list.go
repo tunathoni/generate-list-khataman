@@ -51,8 +51,7 @@ func (list listKhataman) setNewListOrder() listKhataman {
 	maxData := len(list) - 1
 	firstData := list[maxData]
 	remainlist := list[:maxData]
-	println("data pertama ", firstData)
-	println("sisa data ", remainlist)
+
 	newList := append(listKhataman{firstData}, remainlist...)
 
 	return newList
@@ -97,7 +96,6 @@ func (list listKhataman) toString() string {
 }
 
 func getDayName(day int) string {
-	println("HARI NE", day)
 	dayData := []string{"AHAD", "SENIN", "SELASA", "RABU", "KAMIS", "JUM'AH", "SABTU"}
 
 	return dayData[day]
