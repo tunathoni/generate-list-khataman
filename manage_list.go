@@ -73,7 +73,8 @@ func (list listKhataman) print() {
 	dauroh := "DAUROH : *" + getDauroh() + "*"
 
 	fmt.Println(dauroh)
-	fmt.Println(start, "-", end, "\n")
+	fmt.Println(start, "-", end)
+	fmt.Println()
 
 	for index, v := range list {
 		index += 1

@@ -2,10 +2,9 @@ package main
 
 func main() {
 	list := readList("list")
-	// list.print()
 
 	list = list.setNewListOrder()
-	// dauroh := getDauroh()
+	dauroh := getDauroh()
 	list.print()
 
 	list.saveToFile("list")
